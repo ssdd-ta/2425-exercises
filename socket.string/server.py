@@ -3,7 +3,6 @@ import socket
 
 with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as s:
     s.bind(('', 1234))
-    print(f"Server started at {s.getsockname()}")
 
     while 1:
         msg, client = s.recvfrom(1024)
