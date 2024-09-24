@@ -7,7 +7,11 @@ with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as s:
 
     while 1:
         data, client = s.recvfrom(1024)
-        numbers = struct.unpack("!{}h".format(len(data) // 2), data)
+
+        data_format = "!{}h".format(len(data) // 2)
+        print(f"Message format is: {data_format}")
+
+        numbers = struct.unpack(data_format, data)
         result = sum(numbers)
 
         print(f"{client} :: result = {result}")
