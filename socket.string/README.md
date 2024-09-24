@@ -6,7 +6,7 @@ Exec client and server programs in the following manner and order, in different 
 $ python3 server.py
 ```
 ```bash
-$ python3 client.py <server_ip> <server_port>
+$ python3 client.py <server_ip>
 ```
 
 ### Sequence diagram
