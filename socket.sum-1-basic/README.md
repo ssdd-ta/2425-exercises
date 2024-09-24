@@ -1,5 +1,5 @@
 ## Adding two numbers using a UDP socket connection
-In this exercise we will create a simple client-server application that adds two numbers. The client will send two numbers to the server, and the server will return the sum of the two numbers. The client will then print the result.
+In this exercise we will create a simple client-server application that adds two numbers. The client will send two numbers to the server, and the server will return the sum of the two numbers. The client will then print the result. The server must run forever, listening for incoming messages.
 
 Exec client and server programs in the following manner and order, in different terminal windows:
 ```bash
