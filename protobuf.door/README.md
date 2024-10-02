@@ -9,3 +9,9 @@ The control unit will always respond to each command with an OK or error code. T
 - The motor does not respond
 
 Design the protocol. Then, implement this application in Python with sockets and Protocol Buffers.
+
+### Requirements
+Install the following Debian packages:
+```bash
+sudo apt install protobuf-compiler python3-protobuf
+```
